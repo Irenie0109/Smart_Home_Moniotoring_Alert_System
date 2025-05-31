@@ -1,15 +1,15 @@
 #include <WiFiNINA.h>
 #include <PubSubClient.h>
 
-// Wi-Fi credentials
-const char* ssid = "Optus_508297_EXT";
-const char* password = "heezegytes22umL";
+// Wi-Fi credentials 
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
-// HiveMQ Cloud credentials
-const char* mqtt_server = "333ee9d324244021a2661d2fc723ca4a.s1.eu.hivemq.cloud";
+// HiveMQ Cloud credentials 
+const char* mqtt_server = "YOUR_MQTT_BROKER_URL";
 const int mqtt_port = 8883;
-const char* mqtt_user = "hivemq.webclient.1747563318282";
-const char* mqtt_pass = "U16t5H?LF.Vsg!@fPab7";
+const char* mqtt_user = "YOUR_MQTT_USERNAME";
+const char* mqtt_pass = "YOUR_MQTT_PASSWORD";
 
 WiFiSSLClient wifiClient;
 PubSubClient client(wifiClient);
